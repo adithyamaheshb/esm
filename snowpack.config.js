@@ -15,7 +15,12 @@ module.exports = {
     "@snowpack/plugin-typescript",
     "@snowpack/plugin-sass",
     "@snowpack/plugin-react-refresh",
-    "@snowpack/plugin-webpack",
+    [
+      "@snowpack/plugin-webpack",
+      {
+        htmlMinifierOptions: false,
+      },
+    ],
   ],
   // optimize: {
   //   bundle: true,
